@@ -3,62 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Orozco Restrepo | Portafolio</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <title>Carlos Orozco Restrepo | Portfolio</title>
+    
+    <!-- Estilos y Fuentes -->
+     <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icon.webp" type="image/x-icon">
-
 </head>
 <body>
-    <nav>
+
+    <!-- Barra de navegación -->
+    <nav class="nav">
         <ul>
             <li><a href="#sobre-mi">About me</a></li>
             <li><a href="#proyectos">Projects</a></li>
             <li><a href="#contacto">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <img src="img/perifil.png" alt="Foto de mi perfil" class="foto-perfil" />
+
+    <!-- Encabezado -->
+    <header class="header">
+        <img src="img/pic.png" alt="Foto de perfil" class="foto-perfil">
         <div class="name-container">
-            <h1 class="name">Hi I'm Carlos Orozco</h1>
+            <h1 class="name glitch">Hi, I'm <span>Carlos Orozco</span></h1>
         </div>
-        <p>
-            I am a foreign languages student <br>
-            & Frontend Web Developer.
+        <p id="parrafo" class="animated-text">
+            👨🏽‍🏫 Undergraduate student in foreign language studies,<br>
+            🎨 Visual Experience Designer & 💻 Frontend Web Developer.
         </p>
-        <div class="skills">
-            <img src="img/html.png" alt="HTML" width="60">
-            <img src="img/css.png" alt="CSS" width="60">
-            <img src="img/js.png" alt="JavaScript" width="60">
-        </div>
     </header>
+
+    <!-- Contenido Principal -->
     <main>
-        <section id="sobre-mi">
+        <section id="sobre-mi" class="fade-in">
             <h2>About me</h2>
-            <p>
-                I am a foreign languages student and a passionate web developer with experience creating modern and functional websites. I specialize in HTML, CSS, and JavaScript, and I am always looking to learn new technologies.
-            </p>
+            <p>I'm a technology and web design enthusiast, dedicated to crafting immersive digital experiences that captivate and inspire. With a strong passion for innovation, I transform ideas into dynamic and engaging creations that leave a lasting impact. 🚀</p>
         </section>
-        <section id="proyectos">
+
+        <section class="skills">
+            <h2 id="habilidad" >Skills</h2>
+            <img src="img/icon html.png" alt="HTML" width="60">
+            <img src="img/icon js.png" alt="CSS" width="60">
+            <img src="img/icon css.png" alt="JavaScript" width="60">
+        </section>
+
+        <section id="proyectos" class="fade-in">
             <h2>Projects</h2>
             <div class="proyecto">
-                <h3>Proyecto 1</h3>
-                <p>Aqui escribo el proyecto que el hermanito me va ayudar a hacer jijijijiijiji.</p>
+                <h3>🎮 Arcade Portfolio</h3>
+                <p>Un portafolio con temática retro, inspirado en los videojuegos clásicos.</p>
+                <a href="#">Ver proyecto</a>
             </div>
             <div class="proyecto">
-                <h3>Proyecto 2</h3>
-                <p>Despues hago uno by myself.</p>
+                <h3>🌌 Space Explorer</h3>
+                <p>Una experiencia interactiva con animaciones dinámicas y diseño inmersivo.</p>
+                <a href="#">Ver proyecto</a>
             </div>
         </section>
-        <section id="contacto">
-            <h2>Contact me</h2>
+    </main>
+    <h2>contact me</h2>
+    <form action="send-message.php" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit">Enviar</button>
+    </form>
+    <section id="contacto" class="fade-in">
             <p id="chat">
-                Text me: <a href="mailto:carlos-ignacio11@hotmail.com" target="_blank">carlos-ignacio11@hotmail.com</a>
+                📩 Or Write Me: <a href="mailto:carlos-ignacio11@hotmail.com" target="_blank">carlos-ignacio11@hotmail.com</a>
             </p>
         </section>
-    </main>
+    <!-- Pie de página -->
+    
     <footer>
         <p>&copy; 2025 Carlos Ignacio Orozco Restrepo</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
